@@ -1,10 +1,14 @@
 import React from 'react';
 import { styled } from 'styled-components';
-import logo from './logo.svg';
 import './App.css';
 
 const App = () => {
-  return <Container>test 입니다.</Container>;
+  return (
+    <Container>
+      <Title style={{ fontFamily: 'Pretendard' }}>안ㄴ옇사에요</Title>
+      test 입니다.
+    </Container>
+  );
 };
 
 const Container = styled.div`
@@ -14,6 +18,11 @@ const Container = styled.div`
   @media (max-width: 768px) {
     width: 100%;
   }
+`;
+
+const Title = styled.div`
+  font-family: serif;
+  font-size: 28px;
 `;
 
 export default App;
