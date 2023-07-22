@@ -12,9 +12,12 @@ const App = () => {
           원하는 메뉴를 클릭해주세요.
         </Title>
         <CardView>
-          <Card>test1</Card>
-          <Card>test2</Card>
-          <Card>test3</Card>
+          <Card>
+            <CardImg alt="post" src="img/post.png" />
+            우편번호 찾기
+          </Card>
+          <Card>세금 계산기</Card>
+          <Card>영문 주소 변환기</Card>
         </CardView>
       </Container>
     </>
@@ -34,6 +37,10 @@ const Container = styled.div`
 const Title = styled.div`
   font-family: serif;
   font-size: 28px;
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
 `;
 
 const CardView = styled.div`
@@ -43,18 +50,24 @@ const CardView = styled.div`
 
 const Card = styled.div`
   width: calc(50% - 2rem);
-  height: 80px;
   color: #fff;
   margin: 1rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #123;
   border-radius: 8px;
+  padding: 16px;
 
   @media (max-width: 768px) {
     width: 100%;
   }
+`;
+
+const CardImg = styled.img`
+  height: 160px;
+  margin-bottom: 16px;
 `;
 
 export default App;
