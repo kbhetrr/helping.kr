@@ -18,6 +18,7 @@ const App = () => {
 const Container = styled.div`
   width: 768px;
   margin: 0px auto;
+  margin-top: 110px;
 
   @media (max-width: 768px) {
     width: 100%;
