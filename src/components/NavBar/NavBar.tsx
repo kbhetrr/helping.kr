@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { styled } from 'styled-components';
 
 const NavBar = () => {
-  return <Nav>네비게이션 바 입니다.</Nav>;
+  return (
+    <Nav>
+      <Brand>Helping</Brand>
+    </Nav>
+  );
 };
 
 const Nav = styled.div`
@@ -20,6 +24,10 @@ const Nav = styled.div`
   left: 50%;
   transform: translate(-50%);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+`;
+
+const Brand = styled.div`
+  font-size: 18px;
 `;
 
 export default NavBar;
