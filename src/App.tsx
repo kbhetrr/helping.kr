@@ -18,7 +18,7 @@ const App = () => {
           </Card>
           <Card>세금 계산기</Card>
           <Card>영문 주소 변환기</Card>
-          <Card>제사 축문 작성하기</Card>
+          <Card>제사 축문 / 지방 작성하기</Card>
         </CardView>
       </Container>
     </>
